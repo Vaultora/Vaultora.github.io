@@ -3,71 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaultora</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Reseller Product List</title>
+    <link rel="stylesheet" href="/static/styles.css?v=1.0"> <!-- Added version to force reload -->
 </head>
 <body>
-    <header>
-        <h1>Welcome to Vaultora</h1>
-    </header>
-    <main>
-        <div class="product-container">
-            <div class="product"><img src="icons/airpod.png" alt="Airpod"><p>Airpod 2nd, 3rd, and 4th Generation</p></div>
-            <div class="product"><img src="icons/airpod_max.png" alt="Airpod Max"><p>Airpod Max</p></div>
-            <div class="product"><img src="icons/hellstar.png" alt="Hellstar Clothing"><p>Hellstar Clothing</p></div>
+    <div class="container">
+        <header>
+            <h1>Welcome to Vaultora</h1>
+        </header>
 
-            <div class="product"><img src="icons/rolex_box.png" alt="Rolex With Box"><p>Rolex With Box</p></div>
-            <div class="product"><img src="icons/cartier_watch.png" alt="Cartier Watch"><p>Cartier Watch</p></div>
-            <div class="product"><img src="icons/cartier_leather.png" alt="Cartier Leather Watch"><p>Cartier Leather Watch</p></div>
+        <section class="product-list">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('/static/vrbo.png');"></div>
+                <h2>Airpod 2nd, 3rd, and 4th generation</h2>
+                <p>High-quality Airpods with excellent sound and design.</p>
+                <button class="contact-btn" onclick="location.href='contact.html'">Contact Israel</button>
+            </div>
 
-            <div class="product"><img src="icons/jbl_speaker.png" alt="JBL Speaker"><p>JBL Speaker</p></div>
-            <div class="product"><img src="icons/eric_emanuel.png" alt="Eric Emanuel Shorts"><p>Eric Emanuel Shorts</p></div>
-            <div class="product"><img src="icons/lv_shorts.png" alt="LV Shorts"><p>LV Shorts</p></div>
+            <!-- Product 2 -->
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('/static/vrbo.png');"></div> <!-- Changed back to vrbo.png -->
+                <h2>Hellstar Clothing</h2>
+                <p>Stylish clothing perfect for any occasion.</p>
+                <button class="contact-btn" onclick="location.href='contact.html'">Contact Israel</button>
+            </div>
 
-            <div class="product"><img src="icons/rhude_shorts.png" alt="Rhude Shorts"><p>Rhude Shorts</p></div>
-            <div class="product"><img src="icons/chrome_hearts_shirt.png" alt="Chrome Hearts Shirt"><p>Chrome Hearts Shirt</p></div>
-            <div class="product"><img src="icons/chrome_hearts_hoodie.png" alt="Chrome Hearts Hoodie"><p>Chrome Hearts Hoodie</p></div>
+            <!-- Product 3 -->
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('/static/vrbo.png');"></div>
+                <h2>Rolex With Box</h2>
+                <p>Luxury Rolex watch with its original box.</p>
+                <button class="contact-btn" onclick="location.href='contact.html'">Contact Israel</button>
+            </div>
 
-            <div class="product"><img src="icons/essentials_hoodie.png" alt="Essentials Hoodie"><p>Essentials Hoodie</p></div>
-            <div class="product"><img src="icons/bape_hoodie.png" alt="Bape Hoodie"><p>Bape Hoodie</p></div>
-            <div class="product"><img src="icons/denim_tear.png" alt="Denim Tear Clothing"><p>Denim Tear Clothing</p></div>
-
-            <div class="product"><img src="icons/nike_tech.png" alt="Nike Tech Clothing"><p>Nike Tech Clothing</p></div>
-            <div class="product"><img src="icons/corteiz.png" alt="Corteiz Clothing"><p>Corteiz Clothing</p></div>
-            <div class="product"><img src="icons/stone_island.png" alt="Stone Island Clothing"><p>Stone Island Clothing</p></div>
-
-            <div class="product"><img src="icons/burberry_hoodies.png" alt="Burberry Hoodies"><p>Burberry Hoodies</p></div>
-            <div class="product"><img src="icons/lululemon.png" alt="Lululemon Clothing"><p>Lululemon Clothing</p></div>
-            <div class="product"><img src="icons/ralph_lauren.png" alt="Ralph Lauren Polo's"><p>Ralph Lauren Polo's</p></div>
-
-            <div class="product"><img src="icons/canada_goose.png" alt="Canada Goose Clothing"><p>Canada Goose Clothing</p></div>
-            <div class="product"><img src="icons/moncler.png" alt="Moncler Clothing"><p>Moncler Clothing</p></div>
-            <div class="product"><img src="icons/burberry_puffer.png" alt="Burberry Puffers"><p>Burberry Puffers</p></div>
-
-            <div class="product"><img src="icons/north_face.png" alt="North Face Jackets"><p>North Face Jackets</p></div>
-            <div class="product"><img src="icons/canada_goose_vest.png" alt="Canada Goose Vest"><p>Canada Goose Vest</p></div>
-            <div class="product"><img src="icons/hellstar_shirts.png" alt="Hellstar Shirts"><p>Hellstar Shirts</p></div>
-
-            <div class="product"><img src="icons/palm_angels.png" alt="Palm Angels Clothing"><p>Palm Angels Clothing</p></div>
-            <div class="product"><img src="icons/balenciaga.png" alt="Balenciaga Shirts"><p>Balenciaga Shirts</p></div>
-            <div class="product"><img src="icons/amiri_shirt.png" alt="Amiri Shirts"><p>Amiri Shirts</p></div>
-
-            <div class="product"><img src="icons/nba_jersey.png" alt="NBA Jerseys"><p>NBA Jerseys</p></div>
-            <div class="product"><img src="icons/essentials.png" alt="Essentials Clothing"><p>Essentials Clothing</p></div>
-            <div class="product"><img src="icons/purple_jeans.png" alt="PURPLE Jeans"><p>PURPLE Jeans</p></div>
-
-            <div class="product"><img src="icons/amiri_jeans.png" alt="Amiri Jeans"><p>Amiri Jeans</p></div>
-            <div class="product"><img src="icons/lululemon_leggings.png" alt="Lululemon Leggings"><p>Lululemon Leggings</p></div>
-            <div class="product"><img src="icons/lv_beanie.png" alt="LV Beanie"><p>LV Beanie</p></div>
-
-            <div class="product"><img src="icons/canada_goose_beanie.png" alt="Canada Goose Beanie"><p>Canada Goose Beanie</p></div>
-            <div class="product"><img src="icons/north_face_beanie.png" alt="North Face Beanie"><p>North Face Beanie</p></div>
-            <div class="product"><img src="icons/prada_hats.png" alt="Prada Hats"><p>Prada Hats</p></div>
-
-            <div class="product"><img src="icons/apple_watch.png" alt="Apple Watches"><p>Apple Watches</p></div>
-            <div class="product"><img src="icons/iphone_15.png" alt="iPhone 15"><p>iPhone 15</p></div>
-            <div class="product"><img src="icons/galaxy_s24.png" alt="Galaxy S23/S24 Ultra"><p>Galaxy S23/S24 Ultra</p></div>
-        </div>
-    </main>
+            <!-- Add more products here -->
+        </section>
+    </div>
 </body>
 </html>

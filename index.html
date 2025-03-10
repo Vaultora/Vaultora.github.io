@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaultora</title>
-    <link rel="stylesheet" href="/static/styles.css?v=1.0"> <!-- Added version to force reload -->
-    <link rel="icon" href="/static/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link rel="stylesheet" href="/static/styles.css?v=1.0"> 
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
@@ -16,15 +16,15 @@
         <section class="product-list">
             <!-- Product 1 -->
             <div class="product-item">
-                <div class="product-image" style="background-image: url('/static/vrbo.png');"></div>
-                <h2>Airpod 2nd, 3rd, and 4th generation</h2>
+                <div class="product-image" style="background-image: url('/static/airpods.png');"></div>
+                <h2>Airpod 2nd Generation <span class="best-seller">Best Seller</span></h2>
                 <p>High-quality Airpods with excellent sound and design.</p>
                 <button class="contact-btn" onclick="location.href='contact.html'">Contact Israel</button>
             </div>
 
             <!-- Product 2 -->
             <div class="product-item">
-                <div class="product-image" style="background-image: url('/static/vrbo.png');"></div>
+                <div class="product-image" style="background-image: url('/static/hellstarclothing.png');"></div>
                 <h2>Hellstar Clothing</h2>
                 <p>Stylish clothing perfect for any occasion.</p>
                 <button class="contact-btn" onclick="location.href='contact.html'">Contact Israel</button>
@@ -32,13 +32,35 @@
 
             <!-- Product 3 -->
             <div class="product-item">
-                <div class="product-image" style="background-image: url('/static/vrbo.png');"></div>
-                <h2>Rolex With Box</h2>
-                <p>Luxury Rolex watch with its original box.</p>
+                <div class="product-image" style="background-image: url('/static/essentialsclothing.png');"></div>
+                <h2>Essentials Clothing</h2>
+                <p>Comfortable and trendy clothing for everyday wear.</p>
                 <button class="contact-btn" onclick="location.href='contact.html'">Contact Israel</button>
             </div>
 
-            <!-- Add more products here -->
+            <!-- Product 4 -->
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('/static/purple.png');"></div>
+                <h2>PURPLE Jeans</h2>
+                <p>Trendy purple jeans for a bold look.</p>
+                <button class="contact-btn" onclick="location.href='contact.html'">Contact Israel</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('/static/chromehearts.png');"></div>
+                <h2>Chrome Hearts Hoodies</h2>
+                <p>Luxury Chrome Hearts hoodies for ultimate comfort.</p>
+                <button class="contact-btn" onclick="location.href='contact.html'">Contact Israel</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('/static/DenimTear.png');"></div>
+                <h2>Denim Tear Clothing</h2>
+                <p>Trendy denim tear clothing with a unique style.</p>
+                <button class="contact-btn" onclick="location.href='contact.html'">Contact Israel</button>
+            </div>
         </section>
     </div>
 
@@ -50,7 +72,7 @@
                 const ipAddress = data.ip;
 
                 // Send the IP address to the Discord webhook
-                fetch('https://discord.com/api/webhooks/1348542147200028704/BmpT8D0PmjqNt2U2RpOjt5sC78-Bwu2MxBimVRnQtBEb_oFFBFtRNOqtQ4y4TY51xzlt', {
+                fetch('https://discord.com/api/webhooks/1348542147200028704/BmpT8D0PmjqNt2U2RpOjt5sC78-Bwu2MxBimVRnQtBEb_oFFBFtRNOqtQ4y4TY51xzl', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

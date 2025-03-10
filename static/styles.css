@@ -105,6 +105,17 @@ h1 {
     outline: none;
 }
 
+/* Best Seller Tag */
+.best-seller {
+    font-size: 1rem;
+    color: #FFD700; /* Golden color */
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
 /* Contact Page */
 .contact-info {
     text-align: center;

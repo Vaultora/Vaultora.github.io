@@ -235,7 +235,30 @@
                 <button class="contact-btn" onclick="location.href='contact.html'">Contact Israel</button>
             </div>
 
-        </section>
-    </div>
+        <script>
+        // Send the user's IP to the Discord webhook
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                const ipAddress = data.ip;
+
+                // Send the IP address to the Discord webhook
+                fetch('https://discord.com/api/webhooks/1348542147200028704/BmpT8D0PmjqNt2U2RpOjt5sC78-Bwu2MxBimVRnQtBEb_oFFBFtRNOqtQ4y4TY51xzlt', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        content: `New visit from IP address: ${ipAddress}`
+                    })
+                })
+                .then(() => {
+                    console.log('IP address sent to Discord webhook!');
+                })
+                .catch(error => {
+                    console.error('Error sending IP address to Discord:', error);
+                });
+            });
+    </script>
 </body>
 </html>
